@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900");
+@import url("https://cdn.linearicons.com/free/1.0.0/icon-font.min.css");
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #112233;
+}
+
+.weather-card {
+  margin: 60px auto;
+  height: 500px;
+  width: 300px;
+  background: #fff;
+  box-shadow: 0 1px 38px rgba(0, 0, 0, 0.15), 0 5px 12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.weather-card .top {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  background: url("https://s-media-cache-ak0.pinimg.com/564x/cf/1e/c4/cf1ec4b0c96e59657a46867a91bb0d1e.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+.weather-card .top .wrapper {
+  padding: 30px;
+  position: relative;
+  z-index: 1;
+}
+.weather-card .top .wrapper .mynav {
+  height: 20px;
+}
+.weather-card .top .wrapper .mynav .lnr {
+  color: #fff;
+  font-size: 20px;
+}
+.weather-card .top .wrapper .mynav .lnr-chevron-left {
+  display: inline-block;
+  float: left;
+}
+.weather-card .top .wrapper .mynav .lnr-cog {
+  display: inline-block;
+  float: right;
+}
+.weather-card .top .wrapper .heading {
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+}
+.weather-card .top .wrapper .kota {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+}
+.weather-card .top .wrapper .date {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+.weather-card .top .wrapper .time {
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+}
+.weather-card .top .wrapper .temp .temp-type {
+  font-size: 30px;
+  color: #fff;
+}
+.weather-card .top .wrapper .temp .temp-value {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+.weather-card .top .wrapper .temp .deg {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  vertical-align: top;
+}
+.weather-card .top .wrapper .humidity .humidity-pic {
+  max-width: 40px;
+  max-height: 40px;
+  margin-top: -10px;
+}
+.weather-card .top .wrapper .humidity .humidity-type {
+  font-size: 30px;
+  color: #fff;
+}
+.weather-card .top .wrapper .humidity .humidity-value {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+.weather-card .top:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
